@@ -19,7 +19,7 @@ NickName: 'milk'
 webtitle: 'My Github Blog'
 bio: 'have a good day~'
 about: true
-aboutyou: 'a NJUer'
+aboutyou: 'here is some information about me'
 portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS
