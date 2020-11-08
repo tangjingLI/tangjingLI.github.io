@@ -3,8 +3,7 @@ layout: post
 title:  "关于linux安装ssh"
 date:   2020-11-07 14:05:21 +0800
 tags: linux
-color: rgb(255,90,90)
-cover: '../assets/test.png'
+cover: '../assets/20201107.jpg'
 subtitle: 'linux安装ssh那些事儿~'
 ---
 
@@ -22,7 +21,7 @@ subtitle: 'linux安装ssh那些事儿~'
     sudo service sshd status
 ```
 
-- <font size=2>第二步，安装ssh<br></font>
+- <font size=2>第二步，安装ssh</font>
 
 ```SHELL
     sudo yum install openssh-server     #centos看这里
