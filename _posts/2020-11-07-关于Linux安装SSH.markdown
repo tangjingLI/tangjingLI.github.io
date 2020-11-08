@@ -1,4 +1,12 @@
-### 关于linux安装ssh那些事儿
+---
+layout: post
+title:  "关于linux安装ssh"
+date:   2020-11-07 14:05:21 +0800
+tags: linux
+color: rgb(255,90,90)
+cover: '../assets/test.png'
+subtitle: 'linux安装ssh那些事儿~'
+---
 
 #### 写在前面
  
@@ -8,9 +16,33 @@
 
 #### 正话开始
 
+- <font size=2></font>
+  
+```SHELL
+    passwd root
+```
+
+- <font size=2></font>
+
+```SHELL
+    passwd root
+```
+
+- <font size=2></font>
+
+```SHELL
+    passwd root
+```
+
+- <font size=2>到这里ssh就已经在你的linux上安装好啦，我开开心心的打开xftp，快快乐乐的输入用户名root和密码，然后--叮咚，服务器拒绝了密码，请重新输入（掀桌）<br>在网上看了很多教程，有人说是防火墙没关，有人说是没有设置允许root访问，最后发现都不是--原来是初始系统里面没有设置过root的密码！（泪目）</font>
+
+```SHELL
+    passwd root     #然后就会提示你输入root的密码啦
+```
+
 - <font size=2>滴滴滴，ssh安装好以后的正确打开姿势，起飞！</font>
 
 ```SHELL
-    ssh root@ip
+    ssh root@ip     #这次是真的over了
 ```
 
