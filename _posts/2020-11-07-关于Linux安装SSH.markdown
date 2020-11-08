@@ -52,5 +52,6 @@ cover: '../assets/20201107-1.png'
     ssh root@ip     #这次是真的over了
 ```
 
+
 <font size=2>最后附上效果图一张~</font>
 ![error](../assets/20201107-2.png)
