@@ -55,4 +55,4 @@ subtitle: 'linux安装ssh那些事儿~'
 
 
 <font size=2>最后附上效果图一张~</font>
-![error](../assets/20201107-2.png)
+![error](https://github.com/tangjingLI/tangjingLI.github.io/blob/main/assets/20201107-2.png?raw=true)
