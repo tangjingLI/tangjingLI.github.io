@@ -16,25 +16,33 @@ subtitle: 'linux安装ssh那些事儿~'
 
 #### 正话开始
 
-- <font size=2></font>
+- <font size=2>第一步，查看ssh的状态<br>如果输出 `Loaded: error (Reason: No such file or directory)` 表示没有安装ssh<br>如果输出 `Active: inactive (dead) 表示已安装ssh`但没有启动服务</font>
   
 ```SHELL
-    passwd root
+    sudo service sshd status
 ```
 
-- <font size=2></font>
+- <font size=2>第二步，安装ssh<br></font>
 
 ```SHELL
-    passwd root
+    sudo yum install openssh-server     #centos看这里
+    sudo apt-get install openssh-server     #Ubuntu看这里
 ```
 
-- <font size=2></font>
+- <font size=2>第三步，启动ssh</font>
 
 ```SHELL
-    passwd root
+    sudo service sshd start
 ```
 
-- <font size=2>到这里ssh就已经在你的linux上安装好啦，我开开心心的打开xftp，快快乐乐的输入用户名root和密码，然后--叮咚，服务器拒绝了密码，请重新输入（掀桌）<br>在网上看了很多教程，有人说是防火墙没关，有人说是没有设置允许root访问，最后发现都不是--原来是初始系统里面没有设置过root的密码！（泪目）</font>
+- <font size=2>第四步，检查是否已经允许root远程登录</font>
+
+```SHELL
+    vi /etc/ssh/sshd_config     #检查是否是PermitRootLogin yes
+    sudo service sshd restart       #如果修改了配置文件就重启一下
+```
+
+- <font size=2>到这里ssh就已经在你的linux上安装好啦，我开开心心的打开xftp，快快乐乐的输入用户名root和密码，然后--ssh服务器拒绝了密码，请再试一次（掀桌）<br>在网上看了很多教程，有人说是防火墙没关，有人说是没有设置允许root访问，最后发现都不是--原来是初始系统里面没有设置过root的密码！（泪目）</font>
 
 ```SHELL
     passwd root     #然后就会提示你输入root的密码啦
