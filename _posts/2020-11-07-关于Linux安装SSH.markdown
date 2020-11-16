@@ -3,7 +3,6 @@ layout: post
 title:  "关于linux安装ssh"
 date:   2020-11-07 14:05:21 +0800
 tags: linux
-cover: '../assets/20201107-1.png'
 subtitle: 'linux安装ssh那些事儿~'
 ---
 
